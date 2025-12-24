@@ -2,7 +2,7 @@
 
 This is a production-style inventory management system handling real-time stock updates, distributed locking, and concurrent orders using a free open-source stack.
 
-
+test 1
 ## Tech Stack
 - **Backend**: Node.js, Express, Socket.IO
 - **Frontend**: React (Vite), Redux Toolkit
