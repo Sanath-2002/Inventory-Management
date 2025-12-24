@@ -1,0 +1,77 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests\functional.spec.ts:60:5 › Sports Store Functional Verification › 3. Product Management (Add Product)
+[1A[2K[chromium] › tests\functional.spec.ts:60:5 › Sports Store Functional Verification › 3. Product Management (Add Product)
+BROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2KBROWSER LOG: Failed to load resource: the server responded with a status of 403 (Forbidden)
+
+[1A[2KBROWSER LOG: Failed to fetch sales data AxiosError
+
+[1A[2KBROWSER LOG: Failed to load resource: the server responded with a status of 403 (Forbidden)
+
+[1A[2KBROWSER LOG: Failed to fetch sales data AxiosError
+
+[1A[2KBROWSER LOG: Failed to load resource: the server responded with a status of 403 (Forbidden)
+
+[1A[2KBROWSER LOG: AxiosError
+
+[1A[2K  1) [chromium] › tests\functional.spec.ts:60:5 › Sports Store Functional Verification › 3. Product Management (Add Product) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).not.[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('text=Add New Product')
+    Expected: not visible
+    Received: visible
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "not toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('text=Add New Product')[22m
+    [2m    9 × locator resolved to <h2>Add New Product</h2>[22m
+    [2m      - unexpected value "visible"[22m
+
+
+      89 |
+      90 |         // Wait for modal to close
+    > 91 |         await expect(page.locator('text=Add New Product')).not.toBeVisible();
+         |                                                                ^
+      92 |     });
+      93 |
+      94 |     test('4. Inventory Verification & Adjustment', async ({ page }) => {
+        at C:\Users\sanat\Desktop\inventory management system\apps\client\tests\functional.spec.ts:91:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\functional-Sports-Store-Fu-b8dec-uct-Management-Add-Product--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\functional-Sports-Store-Fu-b8dec-uct-Management-Add-Product--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\functional-Sports-Store-Fu-b8dec-uct-Management-Add-Product--chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] › tests\functional.spec.ts:60:5 › Sports Store Functional Verification › 3. Product Management (Add Product) 

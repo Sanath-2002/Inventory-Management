@@ -1,0 +1,637 @@
+
+> api@1.0.0 dev
+> nodemon src/server.ts
+
+[33m[nodemon] 3.1.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Connected to Redis
+Connected to PostgreSQL
+Server running on port 3000
+Login attempt: { username: 'admin', password: 'admin123' }
+[0mPOST /api/v1/login [0m-[0m - ms - -[0m
+Password valid: true
+JWT Verify Error: jwt malformed
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 3.100 ms - 9[0m
+JWT Verify Error: jwt malformed
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 1.273 ms - 9[0m
+Client connected: 7E2XXLHtq6TgY-U5AAAC
+JWT Verify Error: jwt malformed
+[0mPOST /api/v1/products [33m403[0m 1.592 ms - 9[0m
+Client disconnected: 7E2XXLHtq6TgY-U5AAAC
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Connected to Redis
+Connected to PostgreSQL
+Server running on port 3000
+Login attempt: { username: 'wrong', password: 'wrong' }
+User not found
+[0mPOST /api/v1/login [33m401[0m 67.194 ms - 33[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 68.467 ms - 427[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 62.406 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 50.903 ms - 86[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 7.701 ms - -[0m
+[0mGET /api/v1/inventory [32m200[0m 73.199 ms - 3278[0m
+Client connected: lFwx9QYPlDg9tOQ3AAAC
+[0mGET /api/v1/inventory [36m304[0m 9.844 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 108.961 ms - 105[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 7.628 ms - -[0m
+Client disconnected: lFwx9QYPlDg9tOQ3AAAC
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 97.489 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 18.345 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 13.364 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 15.246 ms - 3278[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 14.318 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 10.669 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 11.073 ms - -[0m
+Client connected: k1_nxvp7GONQKZ5BAAAF
+error: duplicate key value violates unique constraint "product_variants_barcode_key"
+    at C:\Users\sanat\Desktop\inventory management system\apps\api\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createProduct (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\product.controller.ts:89:36) {
+  length: 231,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (barcode)=() already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'product_variants',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'product_variants_barcode_key',
+  file: 'nbtinsert.c',
+  line: '664',
+  routine: '_bt_check_unique'
+}
+[0mPOST /api/v1/products [33m400[0m 74.588 ms - 93[0m
+Client disconnected: k1_nxvp7GONQKZ5BAAAF
+Login attempt: { username: 'wrong', password: 'wrong' }
+User not found
+[0mPOST /api/v1/login [33m401[0m 38.741 ms - 33[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 64.612 ms - 427[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 62.759 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 12.634 ms - 86[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 4.793 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 36.866 ms - 105[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 5.542 ms - -[0m
+[0mGET /api/v1/inventory [32m200[0m 73.016 ms - 3278[0m
+[0mGET /api/v1/inventory [36m304[0m 5.886 ms - -[0m
+Client connected: uJIapJifKLoNf5xAAAAI
+Client disconnected: uJIapJifKLoNf5xAAAAI
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 62.223 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 11.813 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 8.907 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 17.329 ms - 3278[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 11.154 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 20.707 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 7.098 ms - -[0m
+Client connected: h4ntXtycZYZ58YymAAAL
+[0mPOST /api/v1/products [32m201[0m 23.322 ms - 93[0m
+Client disconnected: h4ntXtycZYZ58YymAAAL
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 76.553 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 6.943 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 12.901 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 10.981 ms - 3642[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 8.499 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 4.603 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 3.876 ms - -[0m
+Client connected: b5RKmIijmoNA05fQAAAO
+[0mPOST /api/v1/inventory/update [32m200[0m 15.949 ms - 48[0m
+Client disconnected: b5RKmIijmoNA05fQAAAO
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 64.156 ms - 427[0m
+[0mGET /api/v1/products/search?q=AutoT [32m200[0m 20.477 ms - 223[0m
+Login attempt: { username: 'wrong', password: 'wrong' }
+User not found
+[0mPOST /api/v1/login [33m401[0m 32.912 ms - 33[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 59.461 ms - 427[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 61.834 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 26.330 ms - 86[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 6.027 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 46.559 ms - 105[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 4.560 ms - -[0m
+[0mGET /api/v1/inventory [32m200[0m 49.217 ms - 3642[0m
+[0mGET /api/v1/inventory [36m304[0m 5.075 ms - -[0m
+Client connected: j67xQ2dRBGz_wpnkAAAR
+Client disconnected: j67xQ2dRBGz_wpnkAAAR
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 61.963 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 10.348 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 8.994 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 14.977 ms - 3642[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 11.148 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 19.007 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 7.444 ms - -[0m
+Client connected: Fj2jO4Oi_B1V1KCeAAAU
+[0mPOST /api/v1/products [32m201[0m 29.751 ms - 93[0m
+Client disconnected: Fj2jO4Oi_B1V1KCeAAAU
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 62.430 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 13.674 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 11.778 ms - 105[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 10.548 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 5.670 ms - -[0m
+[0mGET /api/v1/inventory [32m200[0m 22.375 ms - 4006[0m
+[0mGET /api/v1/inventory [36m304[0m 5.777 ms - -[0m
+Client connected: uFV5KT6Lwe37KMzXAAAX
+[0mPOST /api/v1/inventory/update [32m200[0m 23.749 ms - 48[0m
+Client disconnected: uFV5KT6Lwe37KMzXAAAX
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 59.660 ms - 427[0m
+[0mGET /api/v1/products/search?q=AutoT [32m200[0m 11.123 ms - 445[0m
+Login attempt: { username: 'wrong', password: 'wrong' }
+User not found
+[0mPOST /api/v1/login [33m401[0m 49.949 ms - 33[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 58.963 ms - 427[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 61.397 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 13.185 ms - 86[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 8.122 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 40.938 ms - 105[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 6.160 ms - -[0m
+[0mGET /api/v1/inventory [32m200[0m 67.732 ms - 4006[0m
+[0mGET /api/v1/inventory [36m304[0m 4.760 ms - -[0m
+Client connected: 3o2BPWzTWtFmTA61AAAa
+Client disconnected: 3o2BPWzTWtFmTA61AAAa
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 65.042 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 7.613 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 7.383 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 10.749 ms - 4006[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 14.664 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 9.167 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 10.284 ms - -[0m
+Client connected: 792yyC610uN6wgRMAAAd
+[0mPOST /api/v1/products [32m201[0m 21.614 ms - 93[0m
+Client disconnected: 792yyC610uN6wgRMAAAd
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 62.843 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 10.830 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 16.951 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 12.448 ms - 4370[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 17.616 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 11.894 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 24.817 ms - -[0m
+Client connected: teztXQjjOlJK5SEeAAAg
+[0mPOST /api/v1/inventory/update [32m200[0m 19.058 ms - 48[0m
+Client disconnected: teztXQjjOlJK5SEeAAAg
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 66.940 ms - 427[0m
+[0mGET /api/v1/products/search?q=AutoT [32m200[0m 4.905 ms - 667[0m
+[0mPOST /api/v1/pos/sale [32m201[0m 32.513 ms - 131[0m
+Login attempt: { username: 'wrong', password: 'wrong' }
+User not found
+[0mPOST /api/v1/login [33m401[0m 32.344 ms - 33[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 61.059 ms - 427[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 63.059 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 17.050 ms - 86[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 8.591 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 46.310 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 47.818 ms - 4370[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 6.288 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 13.849 ms - -[0m
+Client connected: rKJb43osZinYhcPZAAAj
+Client disconnected: rKJb43osZinYhcPZAAAj
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 61.403 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 5.820 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 13.683 ms - 105[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 11.183 ms - -[0m
+[0mGET /api/v1/inventory [32m200[0m 16.817 ms - 4370[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 10.020 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 4.526 ms - -[0m
+Client connected: mcSmnwHF7WVBjjdGAAAm
+[0mPOST /api/v1/products [32m201[0m 19.496 ms - 93[0m
+Client disconnected: mcSmnwHF7WVBjjdGAAAm
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 59.907 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 8.202 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 14.794 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 15.227 ms - 4734[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 14.919 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 6.663 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 5.018 ms - -[0m
+Client connected: hHzGtDn-xZ1b7inuAAAp
+[0mPOST /api/v1/inventory/update [32m200[0m 14.601 ms - 48[0m
+Client disconnected: hHzGtDn-xZ1b7inuAAAp
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 66.749 ms - 427[0m
+[0mGET /api/v1/products/search?q=AutoT [32m200[0m 12.036 ms - 889[0m
+[0mPOST /api/v1/pos/sale [32m201[0m 11.909 ms - 131[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 59.219 ms - 427[0m
+error: column pv.product_name does not exist
+    at C:\Users\sanat\Desktop\inventory management system\apps\api\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getSaleByInvoice (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\pos.controller.ts:134:26) {
+  length: 113,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3665',
+  routine: 'errorMissingColumn'
+}
+[0mGET /api/v1/sales/INV-1766588977812 [31m500[0m 20.999 ms - 41[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Connected to Redis
+Connected to PostgreSQL
+Server running on port 3000
+Login attempt: { username: 'wrong', password: 'wrong' }
+User not found
+[0mPOST /api/v1/login [33m401[0m 56.782 ms - 33[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 67.290 ms - 427[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 61.538 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 28.427 ms - 86[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 4.506 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 86.617 ms - 105[0m
+Client connected: LzYcOGWSI362c34VAAAC
+[0mGET /api/v1/inventory [32m200[0m 80.855 ms - 4734[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 15.219 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 19.477 ms - -[0m
+Client disconnected: LzYcOGWSI362c34VAAAC
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 71.800 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 10.048 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 7.945 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 18.875 ms - 4734[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 12.498 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 6.381 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 4.324 ms - -[0m
+Client connected: oBmso-RHE-ITmlDOAAAF
+[0mPOST /api/v1/products [32m201[0m 19.277 ms - 93[0m
+Client disconnected: oBmso-RHE-ITmlDOAAAF
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 105.182 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 21.261 ms - 86[0m
+[0mGET /api/v1/inventory [32m200[0m 18.434 ms - 5098[0m
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 23.009 ms - 105[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 13.653 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 13.053 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 13.953 ms - -[0m
+Client connected: GCwGh5Rm0MZh1yNGAAAI
+[0mPOST /api/v1/inventory/update [32m200[0m 18.549 ms - 48[0m
+Client disconnected: GCwGh5Rm0MZh1yNGAAAI
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 80.987 ms - 427[0m
+[0mGET /api/v1/products/search?q=AutoT [32m200[0m 5.134 ms - 1111[0m
+[0mPOST /api/v1/pos/sale [32m201[0m 13.416 ms - 131[0m
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 59.170 ms - 427[0m
+[0mGET /api/v1/sales/INV-1766589050726 [32m200[0m 14.372 ms - 643[0m
+[0mPOST /api/v1/returns [32m201[0m 17.714 ms - 111[0m
+[0mGET /api/v1/analytics/stock-value [33m403[0m 4.442 ms - 9[0m
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 2.347 ms - 9[0m
+[0mGET /api/v1/inventory [33m403[0m 1.941 ms - 9[0m
+[0mGET /api/v1/analytics/stock-value [33m403[0m 1.508 ms - 9[0m
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 2.113 ms - 9[0m
+[0mGET /api/v1/inventory [33m403[0m 1.327 ms - 9[0m
+Client connected: 53zFZFxwG7u68tg7AAAL
+Client disconnected: 53zFZFxwG7u68tg7AAAL
+[0mGET /api/v1/analytics/stock-value [33m403[0m 2.885 ms - 9[0m
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 1.644 ms - 9[0m
+[0mGET /api/v1/inventory [33m403[0m 2.805 ms - 9[0m
+[0mGET /api/v1/analytics/stock-value [33m403[0m 1.464 ms - 9[0m
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 1.281 ms - 9[0m
+[0mGET /api/v1/inventory [33m403[0m 2.228 ms - 9[0m
+Client connected: xRUYHyOotT8ml6leAAAO
+[0mPOST /api/v1/products [33m403[0m 3.022 ms - 9[0m
+[0mPOST /api/v1/products [33m403[0m 2.801 ms - 9[0m
+[0mPOST /api/v1/products [33m403[0m 3.495 ms - 9[0m
+[0mPOST /api/v1/products [33m403[0m 1.158 ms - 9[0m
+[0mPOST /api/v1/orders [33m403[0m 1.805 ms - 9[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+Connected to Redis
+Connected to PostgreSQL
+Server running on port 3000
+Client connected: LG8PvIF6iGVEYpehAAAB
+Client disconnected: LG8PvIF6iGVEYpehAAAB
+[0mGET /api/v1/inventory [33m403[0m 10.568 ms - 9[0m
+[0mGET /api/v1/analytics/stock-value [33m403[0m 3.168 ms - 9[0m
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 1.570 ms - 9[0m
+[0mGET /api/v1/inventory [33m403[0m 1.370 ms - 9[0m
+[0mGET /api/v1/analytics/stock-value [33m403[0m 1.636 ms - 9[0m
+[0mGET /api/v1/analytics/daily-sales [33m403[0m 1.763 ms - 9[0m
+Client connected: f2Hg8sGBElX8H6p0AAAE
+Client disconnected: f2Hg8sGBElX8H6p0AAAE
+Login attempt: { username: 'admin', password: 'admin123' }
+Password valid: true
+[0mPOST /api/v1/login [32m200[0m 89.196 ms - 427[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 23.677 ms - 86[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 11.191 ms - -[0m
+Client connected: DtZqkK_1Q-XnZY4LAAAH
+[0mGET /api/v1/analytics/daily-sales [32m200[0m 67.950 ms - 105[0m
+[0mGET /api/v1/inventory [32m200[0m 70.266 ms - 5098[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 5.045 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 10.472 ms - -[0m
+Order creation error: error: column "created_by" of relation "orders" does not exist
+    at C:\Users\sanat\Desktop\inventory management system\apps\api\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\order.controller.ts:11:26) {
+  length: 129,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '35',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_target.c',
+  line: '1075',
+  routine: 'checkInsertTargets'
+}
+[0mPOST /api/v1/orders [31m500[0m 25.329 ms - 52[0m
+Order creation error: error: column "created_by" of relation "orders" does not exist
+    at C:\Users\sanat\Desktop\inventory management system\apps\api\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\order.controller.ts:11:26) {
+  length: 129,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '35',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_target.c',
+  line: '1075',
+  routine: 'checkInsertTargets'
+}
+[0mPOST /api/v1/orders [31m500[0m 32.233 ms - 52[0m
+Client disconnected: DtZqkK_1Q-XnZY4LAAAH
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Connected to Redis
+Connected to PostgreSQL
+Server running on port 3000
+Client connected: YJvbeZjk4VvwxxziAAAB
+Client disconnected: YJvbeZjk4VvwxxziAAAB
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 47.725 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 76.373 ms - -[0m
+Client connected: XVPoksnGJNN_x5dlAAAE
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 23.601 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 65.327 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 21.188 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 11.726 ms - -[0m
+Inventory processing failed: error: invalid input syntax for type uuid: "1"
+    at C:\Users\sanat\Desktop\inventory management system\apps\api\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async processOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\services\inventory.service.ts:84:13)
+    at async createOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\order.controller.ts:44:13) {
+  length: 133,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $5 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+[0mPOST /api/v1/orders [33m400[0m 68.464 ms - 102[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+Connected to Redis
+Connected to PostgreSQL
+Server running on port 3000
+Client connected: APh3ONtzgu-lFKNLAAAB
+Client disconnected: APh3ONtzgu-lFKNLAAAB
+Client connected: bmDON2OjNxRROumEAAAE
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 51.554 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 77.056 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 6.573 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 61.866 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 15.718 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 6.093 ms - -[0m
+[0mPOST /api/v1/orders [32m201[0m 60.617 ms - 149[0m
+[0mGET /api/v1/inventory [32m200[0m 13.717 ms - 5098[0m
+[0mPOST /api/v1/orders [32m201[0m 27.008 ms - 149[0m
+[0mGET /api/v1/inventory [32m200[0m 3.416 ms - 5098[0m
+[0mPOST /api/v1/orders [32m201[0m 28.031 ms - 149[0m
+[0mGET /api/v1/inventory [32m200[0m 3.333 ms - 5098[0m
+Inventory processing failed: error: new row for relation "inventory_logs" violates check constraint "inventory_logs_action_check"
+    at C:\Users\sanat\Desktop\inventory management system\apps\api\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async processOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\services\inventory.service.ts:84:13)
+    at async createOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\order.controller.ts:44:13) {
+  length: 400,
+  severity: 'ERROR',
+  code: '23514',
+  detail: 'Failing row contains (92e35b72-7d43-4224-8909-93ac0036cd85, 508aecee-3f2b-420a-bff1-4f6c17155a4c, PURCHASE, 5, Order 3fd76cb3-f300-48b1-ab98-a049a886c01e, null, 2025-12-24 15:21:06.857651).',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'inventory_logs',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'inventory_logs_action_check',
+  file: 'execMain.c',
+  line: '2074',
+  routine: 'ExecConstraints'
+}
+[0mPOST /api/v1/orders [33m400[0m 32.837 ms - 158[0m
+Inventory processing failed: error: new row for relation "inventory_logs" violates check constraint "inventory_logs_action_check"
+    at C:\Users\sanat\Desktop\inventory management system\apps\api\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async processOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\services\inventory.service.ts:84:13)
+    at async createOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\order.controller.ts:44:13) {
+  length: 400,
+  severity: 'ERROR',
+  code: '23514',
+  detail: 'Failing row contains (ab37ff8a-ee84-45ae-b298-067a0d52d91c, 508aecee-3f2b-420a-bff1-4f6c17155a4c, PURCHASE, 5, Order be8a7b2c-78df-4567-bd40-62020a439a72, null, 2025-12-24 15:21:14.494647).',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'inventory_logs',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'inventory_logs_action_check',
+  file: 'execMain.c',
+  line: '2074',
+  routine: 'ExecConstraints'
+}
+[0mPOST /api/v1/orders [33m400[0m 22.648 ms - 158[0m
+Client disconnected: bmDON2OjNxRROumEAAAE
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+Connected to Redis
+Connected to PostgreSQL
+Server running on port 3000
+Client connected: 4IGPRQbTswOn6ovUAAAC
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 82.521 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 69.923 ms - 86[0m
+[0mGET /api/v1/inventory [36m304[0m 69.134 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 7.919 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 9.602 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 8.526 ms - -[0m
+Client disconnected: 4IGPRQbTswOn6ovUAAAC
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 45.101 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 57.407 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 50.146 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 11.988 ms - -[0m
+Client connected: AESoSeBw0TsX6V0pAAAF
+[0mGET /api/v1/analytics/stock-value [36m304[0m 20.692 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 9.429 ms - -[0m
+Client disconnected: AESoSeBw0TsX6V0pAAAF
+[0mGET /api/v1/analytics/stock-value [36m304[0m 29.863 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 23.055 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 15.689 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 11.740 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 10.931 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 10.038 ms - -[0m
+Client connected: A5p1NtDYzbKw48nRAAAI
+Client disconnected: A5p1NtDYzbKw48nRAAAI
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 81.332 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 92.977 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 84.182 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 8.906 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 5.605 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 10.226 ms - -[0m
+Client connected: 7fBT13XdMPWZ9d6XAAAL
+Client disconnected: 7fBT13XdMPWZ9d6XAAAL
+[0mGET /api/v1/analytics/stock-value [36m304[0m 24.175 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 23.341 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 23.805 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 15.136 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 11.302 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 15.574 ms - -[0m
+Client connected: AM1VoYkpiPlaJ56fAAAO
+[0mPOST /api/v1/orders [32m201[0m 97.322 ms - 149[0m
+[0mGET /api/v1/inventory [32m200[0m 29.355 ms - 5098[0m
+[0mPOST /api/v1/orders [32m201[0m 36.121 ms - 153[0m
+[0mGET /api/v1/inventory [32m200[0m 7.660 ms - 5098[0m
+[0mPOST /api/v1/orders [32m201[0m 34.632 ms - 153[0m
+[0mGET /api/v1/inventory [32m200[0m 9.146 ms - 5098[0m
+[0mPOST /api/v1/orders [32m201[0m 37.832 ms - 153[0m
+[0mGET /api/v1/inventory [32m200[0m 4.150 ms - 5098[0m
+[0mPOST /api/v1/orders [32m201[0m 43.356 ms - 149[0m
+[0mGET /api/v1/inventory [32m200[0m 26.944 ms - 5098[0m
+Inventory processing failed: Error: Insufficient stock for variant 508aecee-3f2b-420a-bff1-4f6c17155a4c. Available: 80, Requested: 100
+    at processOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\services\inventory.service.ts:70:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createOrder (C:\Users\sanat\Desktop\inventory management system\apps\api\src\controllers\order.controller.ts:44:13)
+[0mPOST /api/v1/orders [33m400[0m 38.487 ms - 159[0m
+[0mPOST /api/v1/orders [32m201[0m 32.099 ms - 149[0m
+[0mGET /api/v1/inventory [32m200[0m 6.711 ms - 5098[0m
+Client disconnected: AM1VoYkpiPlaJ56fAAAO
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 59.270 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [32m200[0m 68.230 ms - 86[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 8.531 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 65.277 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 12.203 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 7.274 ms - -[0m
+Client connected: CjbLTvc-uM2Gr-ujAAAR
+Client disconnected: CjbLTvc-uM2Gr-ujAAAR
+[0mGET /api/v1/analytics/stock-value [36m304[0m 55.193 ms - -[0m
+Client connected: C-JwOngR1Ff76b6VAAAU
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 52.850 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 64.385 ms - -[0m
+[0mGET /api/v1/analytics/stock-value [36m304[0m 16.078 ms - -[0m
+[0mGET /api/v1/analytics/daily-sales [36m304[0m 11.226 ms - -[0m
+[0mGET /api/v1/inventory [36m304[0m 9.662 ms - -[0m
+Client disconnected: C-JwOngR1Ff76b6VAAAU
+[0mGET /api/v1/products/search?q=Air%20Zoom%20Pegasus%2039 [32m200[0m 55.863 ms - 930[0m
+[0mPOST /api/v1/pos/sale [32m201[0m 38.112 ms - 135[0m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

@@ -1,0 +1,135 @@
+
+Running 6 tests using 1 worker
+
+[1A[2K[1/6] [chromium] › tests\functional.spec.ts:19:5 › Sports Store Functional Verification › 1. Login Flow (Admin)
+[1A[2K[chromium] › tests\functional.spec.ts:19:5 › Sports Store Functional Verification › 1. Login Flow (Admin)
+BROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+
+[1A[2KBROWSER LOG: AxiosError
+
+[1A[2K[2/6] [chromium] › tests\functional.spec.ts:39:5 › Sports Store Functional Verification › 2. Dashboard & Navigation
+[1A[2K[chromium] › tests\functional.spec.ts:39:5 › Sports Store Functional Verification › 2. Dashboard & Navigation
+BROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2K[3/6] [chromium] › tests\functional.spec.ts:61:5 › Sports Store Functional Verification › 3. Product Management (Add Product)
+[1A[2K[chromium] › tests\functional.spec.ts:61:5 › Sports Store Functional Verification › 3. Product Management (Add Product)
+BROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2K[4/6] [chromium] › tests\functional.spec.ts:96:5 › Sports Store Functional Verification › 4. Inventory Verification & Adjustment
+[1A[2K[chromium] › tests\functional.spec.ts:96:5 › Sports Store Functional Verification › 4. Inventory Verification & Adjustment
+BROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2KBROWSER LOG: The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+[1A[2K[5/6] [chromium] › tests\functional.spec.ts:128:5 › Sports Store Functional Verification › 5. POS Billing Flow
+[1A[2K[chromium] › tests\functional.spec.ts:128:5 › Sports Store Functional Verification › 5. POS Billing Flow
+BROWSER LOG: [vite] connecting...
+
+[1A[2KBROWSER LOG: [vite] connected.
+
+[1A[2KBROWSER LOG: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+[1A[2K  1) [chromium] › tests\functional.spec.ts:128:5 › Sports Store Functional Verification › 5. POS Billing Flow 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('div').locator('text=AutoTest_1766588879155')
+    Expected: visible
+    Error: strict mode violation: locator('div').locator('text=AutoTest_1766588879155') resolved to 2 elements:
+        1) <div>AutoTest_1766588879155</div> aka getByText('AutoTest_1766588879155').first()
+        2) <div>AutoTest_1766588879155</div> aka getByRole('table').getByText('AutoTest_1766588879155')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('div').locator('text=AutoTest_1766588879155')[22m
+
+
+      144 |         // Verify Cart
+      145 |         await expect(page.locator('text=Total Pay')).toBeVisible(); // Check cart section
+    > 146 |         await expect(page.locator(`div >> text=${productName}`)).toBeVisible(); // Item in cart
+          |                                                                  ^
+      147 |
+      148 |         // Checkout
+      149 |         // We need to capture the response to get invoice number
+        at C:\Users\sanat\Desktop\inventory management system\apps\client\tests\functional.spec.ts:146:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\functional-Sports-Store-Fu-1f7e2-fication-5-POS-Billing-Flow-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\functional-Sports-Store-Fu-1f7e2-fication-5-POS-Billing-Flow-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\functional-Sports-Store-Fu-1f7e2-fication-5-POS-Billing-Flow-chromium\error-context.md
+
+
+[1A[2K[6/6] [chromium] › tests\functional.spec.ts:165:5 › Sports Store Functional Verification › 6. Returns & Exchanges
+[1A[2K  1 failed
+    [chromium] › tests\functional.spec.ts:128:5 › Sports Store Functional Verification › 5. POS Billing Flow 
+  1 did not run
+  4 passed (9.8s)
